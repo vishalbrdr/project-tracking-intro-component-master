@@ -1,6 +1,6 @@
 # Frontend Mentor - Project tracking intro component solution
 
-This is a solution to the [Project tracking intro component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Project tracking intro component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/project-tracking-intro-component-5d289097500fcb331a67d80e). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -11,7 +11,6 @@ This is a solution to the [Project tracking intro component challenge on Fronten
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-
 
 ## Overview
 
@@ -27,11 +26,10 @@ Users should be able to:
 
 ![](./images/screenshot.png)
 
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/vishalbrdr/project-tracking-intro-component-master](https://github.com/vishalbrdr/project-tracking-intro-component-master)
+- Live Site URL: [https://vishalbrdr.github.io/project-tracking-intro-component-master/](https://vishalbrdr.github.io/project-tracking-intro-component-master/)
 
 ## My process
 
@@ -41,9 +39,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 
-
 ## Author
 
 - Frontend Mentor - [@vishalbrdr](https://www.frontendmentor.io/profile/vishalbrdr)
 - Instagram - [@vishal_brdr](https://www.instagram.com/vishal_brdr)
-
