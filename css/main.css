@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 75vw;
+  max-width: 200rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .container {
+    width: 90vw;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+@media screen and (max-width: 820px) {
+  .header .container {
+    flex-direction: column;
+    position: relative;
+  }
+}
+
+.header::before {
+  content: "";
+  height: 50vh;
+  width: 50vw;
+  position: absolute;
+  background-color: #eef3f6;
+  right: 0;
+  top: 0;
+  border-bottom-left-radius: 5rem;
+  z-index: -1;
+}
+
+.header .nav-logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header .nav-logo [id="menu-btn-container"] {
+  display: none;
+}
+
+@media screen and (max-width: 820px) {
+  .header .nav-logo [id="menu-btn-container"] {
+    display: block;
+  }
+  .header .nav-logo [id="menu-btn-container"] img {
+    display: none;
+  }
+}
+
+.header nav .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.header nav .nav-links .dot {
+  margin-right: 5rem;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  background-color: rgba(160, 161, 172, 0.4);
+}
+
+@media screen and (max-width: 820px) {
+  .header nav .nav-links .dot {
+    width: 80%;
+    border-radius: 0;
+    margin-right: 0;
+    height: 2px;
+    margin-top: 2.5rem;
+  }
+}
+
+.header nav .nav-links li {
+  list-style: none;
+  margin-right: 5rem;
+}
+
+.header nav .nav-links li a {
+  text-decoration: none;
+  color: #242942;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.header nav .nav-links li a:hover, .header nav .nav-links li a:focus {
+  outline: none;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 820px) {
+  .header nav .nav-links li {
+    margin-right: 0;
+    margin-top: 2.5rem;
+  }
+}
+
+.header nav .nav-links li:last-of-type {
+  margin-right: 0;
+}
+
+.header nav .nav-links li:last-of-type a {
+  color: #a0a1ac;
+}
+
+@media screen and (max-width: 820px) {
+  .header nav .nav-links li:last-of-type {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .header nav {
+    margin-top: 2rem;
+    width: 90vw;
+    position: absolute;
+    top: 100%;
+    z-index: 5;
+    display: none;
+  }
+  .header nav .nav-links {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.7rem 0.1rem #a0a1ac;
+    flex-direction: column;
+    max-height: 0;
+  }
+  .header nav .nav-links li a {
+    font-size: 1.6rem;
+  }
+  .header nav .nav-links.menu {
+    max-height: max-content;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 10rem;
+  height: 60vh;
+}
+
+@media screen and (max-width: 820px) {
+  main {
+    height: auto;
+    flex-direction: column;
+    margin-top: 5rem;
+  }
+}
+
+main img {
+  position: absolute;
+  right: -18%;
+  top: 0;
+  width: 65vw;
+}
+
+@media screen and (max-width: 820px) {
+  main img {
+    position: relative;
+    width: 100%;
+    order: 1;
+  }
+}
+
+main .container {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  order: 2;
+  align-self: center;
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 820px) {
+  main .container {
+    font-size: 1.6rem;
+  }
+}
+
+main .container .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 820px) {
+  main .container .content {
+    width: 100%;
+  }
+}
+
+main .container .content .new {
+  display: flex;
+  align-items: baseline;
+}
+
+main .container .content .new span {
+  text-transform: uppercase;
+}
+
+main .container .content .new span:first-of-type {
+  color: #eef3f6;
+  background-color: #242942;
+  font-family: "Barlow Condensed", sans-serif;
+  padding: 0.25rem 1.2rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+}
+
+main .container .content .new span:last-of-type {
+  margin-left: 1rem;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 3px;
+  color: #a0a1ac;
+}
+
+main .container .content h1 {
+  margin-top: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
+  color: #242942;
+  text-transform: uppercase;
+  font-size: 6rem;
+  line-height: 6rem;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 820px) {
+  main .container .content h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+
+main .container .content p {
+  font-family: "Barlow", sans-serif;
+  color: #5b5f71;
+  font-weight: 400;
+  margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 820px) {
+  main .container .content p {
+    margin-bottom: 3rem;
+  }
+}
+
+main .container .content .cta-container {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 820px) {
+  main .container .content .cta-container {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  main .container .content .cta-container {
+    font-size: 1.4rem;
+  }
+}
+
+main .container .content .cta-container .cta {
+  font-size: inherit;
+  border: none;
+  background-color: #ff5c5c;
+  color: #eef3f6;
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 1.2rem 2.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: 300ms ease;
+}
+
+main .container .content .cta-container .cta:hover, main .container .content .cta-container .cta:focus {
+  outline: none;
+  background-color: #ff8f8f;
+  cursor: pointer;
+}
+
+main .container .content .cta-container span {
+  color: #a0a1ac;
+  margin-left: 2rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 820px) {
+  main .container .content .cta-container span {
+    margin-left: 1rem;
+  }
+}
+
+footer {
+  font-size: 1.4rem;
+  font-family: "Barlow", sans-serif;
+  margin: 2rem auto;
+}
+
+footer .attribution {
+  text-align: center;
+}
+
+footer .attribution a {
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  color: #ff5c5c;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.active {
+  display: block !important;
+}
